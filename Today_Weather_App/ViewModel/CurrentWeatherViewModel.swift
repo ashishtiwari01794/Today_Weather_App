@@ -25,7 +25,8 @@ struct CurrentWeatherViewModel {
     }
     
 }
-
+//MARK:- Extension for CurrentWeatherViewModel
+// setters
 extension CurrentWeatherViewModel {
     
     private func setTempString(currentWeather: CurrentWeather) -> String {

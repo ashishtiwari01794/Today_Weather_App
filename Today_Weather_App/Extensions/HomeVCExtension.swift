@@ -32,7 +32,7 @@ extension HomeViewController {
     
 
     
-    func didReceiveLoginResponse(success: Bool,errorMsg:String) {
+    func didReceiveValidationResponse(success: Bool,errorMsg:String) {
         if success {
             getWeather(request: WeatherInfoRequest(lat: "\(userLocation.coordinate.latitude)", lon: "\(userLocation.coordinate.longitude)", appid: Constants.api_id, units: Constants.units))
             

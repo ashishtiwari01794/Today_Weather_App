@@ -44,12 +44,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, WeatherVi
         
         
     }
-    
+    //MARK:- Location delegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         userLocation = locations[0] as CLLocation
         getWeather(request: WeatherInfoRequest(lat: "\(userLocation.coordinate.latitude)", lon: "\(userLocation.coordinate.longitude)", appid: Constants.api_id, units: Constants.units))
     }
     
+    //MARK:- Date Picker Done Selection
     @objc func tapDoneSelection() {
         if let datePicker = self.txtDate.inputView as? UIDatePicker {
             let dateformatter = DateFormatter()
@@ -64,7 +65,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, WeatherVi
         
         self.txtDate.resignFirstResponder()
     }
-    
+    //MARK:- Calendar Tap
     @IBAction func onCalanderTap(_ sender: Any) {
         self.txtDate.becomeFirstResponder()
     }

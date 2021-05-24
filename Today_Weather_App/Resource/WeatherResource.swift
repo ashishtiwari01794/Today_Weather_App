@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+//converting the input into query item 
 extension Encodable
 {
     func convertToURLQueryItems() -> [URLQueryItem]?

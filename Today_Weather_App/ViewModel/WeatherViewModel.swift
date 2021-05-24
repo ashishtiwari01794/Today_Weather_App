@@ -6,24 +6,22 @@
 //
 
 import Foundation
-
+//MARK:- Delegate
 protocol WeatherViewModelDelegate : AnyObject {
-    func didReceiveLoginResponse(success: Bool,errorMsg:String)
+    func didReceiveValidationResponse(success: Bool,errorMsg:String)
 }
-
-
 struct WeatherViewModel {
     var delegate : WeatherViewModelDelegate?
     
-    
+    //validating the date
     func validation (date:Int){
         let validationResult = APICallValidation().validateDate(date: date )
         if validationResult.success {
             
-            self.delegate?.didReceiveLoginResponse(success:true, errorMsg: validationResult.error!)
+            self.delegate?.didReceiveValidationResponse(success:true, errorMsg: validationResult.error!)
         }
         else {
-            self.delegate?.didReceiveLoginResponse(success:false, errorMsg: validationResult.error!)
+            self.delegate?.didReceiveValidationResponse(success:false, errorMsg: validationResult.error!)
         }
     }
 }
