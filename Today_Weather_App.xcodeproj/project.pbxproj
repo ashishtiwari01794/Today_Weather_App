@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B803E97A265B66B100883253 /* APIManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803E979265B66B100883253 /* APIManagerExtension.swift */; };
 		B83882C32659404F00313623 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83882B82659404F00313623 /* APIManager.swift */; };
 		B83882C42659404F00313623 /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83882BA2659404F00313623 /* CurrentWeatherViewModel.swift */; };
 		B83882C52659404F00313623 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83882BC2659404F00313623 /* Wind.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B803E979265B66B100883253 /* APIManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerExtension.swift; sourceTree = "<group>"; };
 		B83882B82659404F00313623 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		B83882BA2659404F00313623 /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
 		B83882BC2659404F00313623 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				B8388302265A776200313623 /* HomeVCExtension.swift */,
+				B803E979265B66B100883253 /* APIManagerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				B83882C92659404F00313623 /* Main.swift in Sources */,
 				B83882C32659404F00313623 /* APIManager.swift in Sources */,
 				B83882C42659404F00313623 /* CurrentWeatherViewModel.swift in Sources */,
+				B803E97A265B66B100883253 /* APIManagerExtension.swift in Sources */,
 				B83882E92659A20B00313623 /* APICallValidation.swift in Sources */,
 				B8388307265A85C600313623 /* WeatherViewModel.swift in Sources */,
 				B83882C72659404F00313623 /* CurrentWeather.swift in Sources */,
